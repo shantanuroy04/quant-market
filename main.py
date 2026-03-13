@@ -3,7 +3,7 @@ import yfinance as yf
 from scripts import predict_future_price, risk_score, plot_data
 
 # Set the app title
-st.title("Quant Market Predictor")
+st.title("StockSight")
 
 # Predefined list of popular ticker symbols
 popular_tickers = {
