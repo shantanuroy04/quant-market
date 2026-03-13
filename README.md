@@ -5,29 +5,34 @@
 ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A **quantitative finance and machine learning project** that predicts stock prices using historical market data.
-The project provides **interactive visualization, volatility analysis, and price forecasting** through a **Streamlit dashboard**.
+**StockSight** is a quantitative finance and machine learning dashboard that analyzes stock market data and predicts future prices using historical trends.
 
-This tool demonstrates how **data science and machine learning** can be applied to **financial market prediction**.
+The project provides:
+
+* 📊 Historical stock visualization
+* ⚠️ Volatility-based risk analysis
+* 🤖 Machine learning price prediction
+
+All features are accessible through an **interactive Streamlit dashboard**.
 
 ---
 
 # Project Overview
 
-Quant Market Predictor analyzes historical NASDAQ stock data and applies **Linear Regression models** to forecast future stock prices.
+StockSight analyzes historical stock data and applies **machine learning models** to estimate future stock prices.
 
-The project includes:
+The system performs:
 
-* Financial data collection
-* Data preprocessing
-* Machine learning prediction
-* Risk & volatility analysis
-* Interactive visualization dashboard
+* Financial data collection from Yahoo Finance
+* Data preprocessing with Pandas
+* Risk and volatility calculations
+* Machine learning prediction using Linear Regression
+* Interactive visualization with Streamlit
 
-The system is designed for:
+This project is useful for:
 
-* Data science learners
-* Quantitative finance beginners
+* Data science learning
+* Quantitative finance practice
 * Machine learning experimentation
 * Financial data analysis
 
@@ -38,7 +43,8 @@ The system is designed for:
 ## 📊 Historical Stock Price Visualization
 
 This visualization shows the **historical daily average price of Microsoft (MSFT)** over the selected time period.
-Users can analyze **trends and historical price movements using interactive charts**.
+
+Users can analyze **trends and historical price movements** through an interactive chart.
 
 ![Microsoft Stock Historical Chart](images/plot-data.png)
 
@@ -48,7 +54,7 @@ Users can analyze **trends and historical price movements using interactive char
 
 The dashboard calculates a **risk score based on stock volatility**.
 
-In this example, **Microsoft shows a moderate risk level** with a calculated volatility score.
+In this example, Microsoft shows a **moderate risk level** based on the volatility score.
 
 ![Microsoft Risk Analysis](images/stock-risk.png)
 
@@ -96,7 +102,7 @@ Predicted price for MSFT in 30 days: $470.45
                            |
                            v
                 +----------------------+
-                |  Visualization Layer |
+                | Visualization Layer  |
                 | Streamlit + Altair   |
                 +----------------------+
 ```
@@ -106,20 +112,20 @@ Predicted price for MSFT in 30 days: $470.45
 # Project Structure
 
 ```
-Quant-Market-Predictor
+StockSight
 │
-├── resources/          
-├── scripts/            
-├── tests/              
-│
-├── images/             
+├── images
 │   ├── plot-data.png
 │   ├── stock-risk.png
 │   └── predict-future.png
 │
-├── main.py             
-├── requirements.txt    
-├── setup.py            
+├── resources
+├── scripts
+├── tests
+│
+├── main.py
+├── requirements.txt
+├── setup.py
 ├── LICENSE.txt
 └── README.md
 ```
@@ -128,19 +134,19 @@ Quant-Market-Predictor
 
 # Installation ⚙️
 
-Clone the repository:
+Clone the repository
 
 ```bash
-git clone https://github.com/ahmad-masud/Quant-Market-Predictor.git
+git clone https://github.com/shantanuroy04/quant-market.git
 ```
 
-Navigate into the project:
+Navigate to the project folder
 
 ```bash
-cd Quant-Market-Predictor
+cd quant-market
 ```
 
-Install dependencies:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -150,13 +156,13 @@ pip install -r requirements.txt
 
 # Running the Application
 
-Start the Streamlit dashboard:
+Start the Streamlit dashboard
 
 ```bash
 streamlit run main.py
 ```
 
-After running, open the **local Streamlit URL** in your browser.
+Open the **local Streamlit URL** in your browser.
 
 ---
 
@@ -164,7 +170,7 @@ After running, open the **local Streamlit URL** in your browser.
 
 1. Select a **stock ticker** (example: `MSFT`, `AAPL`, `TSLA`)
 2. Choose the **historical data period**
-3. Select analysis type:
+3. Select an analysis option:
 
    * Predict Future Price
    * Measure Stock Risk
@@ -186,7 +192,7 @@ altair
 yfinance
 ```
 
-Install them with:
+Install them using:
 
 ```bash
 pip install -r requirements.txt
@@ -196,7 +202,7 @@ pip install -r requirements.txt
 
 # Machine Learning Model
 
-The project uses **Linear Regression** to estimate future stock prices from historical data trends.
+The project currently uses **Linear Regression** to estimate future stock prices based on historical trends.
 
 Possible improvements:
 
@@ -209,13 +215,13 @@ Possible improvements:
 
 # Future Improvements
 
-Possible enhancements for the project:
+Potential upgrades:
 
 * Deep learning stock prediction
 * Multi-stock portfolio comparison
 * Portfolio optimization tools
 * Real-time market streaming
-* Backtesting trading strategies
+* Trading strategy backtesting
 
 ---
 
@@ -224,19 +230,19 @@ Possible enhancements for the project:
 Contributions are welcome.
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a new branch
 
 ```
 git checkout -b feature-name
 ```
 
-3. Commit your changes
+3. Commit changes
 
 ```
 git commit -m "Add feature"
 ```
 
-4. Push your branch
+4. Push the branch
 
 ```
 git push origin feature-name
@@ -250,7 +256,7 @@ git push origin feature-name
 
 This project is licensed under the **MIT License**.
 
-See the `LICENSE.txt` file for full details.
+See the `LICENSE.txt` file for details.
 
 ---
 
@@ -258,4 +264,4 @@ See the `LICENSE.txt` file for full details.
 
 This project is **for educational purposes only**.
 
-Stock market predictions generated by this tool **should not be considered financial advice**.
+Stock market predictions generated by this tool **should not be considered financial advice**. Always perform your own research before making investment decisions.
