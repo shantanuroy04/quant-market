@@ -12,7 +12,7 @@ popular_tickers = {
     "AMZN": "Amazon.com Inc.",
     "GOOGL": "Alphabet Inc. (Google)",
     "META": "Meta Platforms, Inc.",
-    "BRK.A": "Berkshire Hathaway Inc.",
+    "BRK-A": "Berkshire Hathaway Inc.",
     "JNJ": "Johnson & Johnson",
     "V": "Visa Inc.",
     "WMT": "Walmart Inc.",
